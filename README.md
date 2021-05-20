@@ -10,7 +10,7 @@
 7. USB-connected eyboard and mouse
 8. Monitor with HDMI (Note: You can use a monitor, TV, or laptop. If you use a laptop, there are some extra steps you'll need to do to use your laptop as a monitor. This requires an Ethernet and a WiFi connection.) 
     If using the laptop method, you'll also need a network cable (Ethernet).
-10.  
+9.  
 
 ##Setting Up Your Raspberry Pi
 
@@ -26,6 +26,8 @@ After formatting your SD card, you'll need to make a WiFi Config file [as descri
 Connect your Pi to power and use the Ethernet cable to connect the Pi to your laptop.
 
 Have PuTTy downloaded to your laptop. Open PuTTy, in the hostname secion, type "raspberrypi". You'll probaby have to click "accept" or "yes" to show you know you're connecting to a trustworthy connection. After this, it'll ask you for the username (pi) and password (raspberry). These are the default. 
+
+After this, you'll need the VNC software. After setting up once, you should be able to connect to your Pi through VNC anytime (sometimes it takes a couple tries to connect).
 
 ## Raspberry Pi Camera Timelapse
 
