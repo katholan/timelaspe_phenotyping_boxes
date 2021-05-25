@@ -27,14 +27,14 @@ You will only need to do this once. Make sure all important info is off of the S
 
 For a headless connection (using your laptop or computer to control the Pi), you can generally follow the instructions in this [tutorial](https://maker.pro/raspberry-pi/projects/how-to-connect-a-raspberry-pi-to-a-laptop-display), although some things might be a bit different. First, make a WiFi Config file. For WiFi networks that require a username as well, replace the network secion in the config file with the below code, substituting the username and password for the network:
 
-`
+```
 network={
         ssid="<network>"
         key_mgmt=WPA-EAP
         identity="<username>"
         password="<password>"
 }
-`
+```
 
 Once you have your config file, you can put the SD card into your Pi, connect your Pi directly to your computer with an Ethernet cable, and power on your Pi. All Pis default to "raspberrypi" as the hostname, so finding out the IP address with the "Advanced IP Scanner" isn't completely necessary, and you can move to the next step. Download [PuTTY](https://www.putty.org/) to your laptop and enter the hostname ('raspberrypi') or the IP address as determined by the Advanced IP Scanner software. Click "yes" on the security alert and it should connect to your Pi in the PuTTY terminal. The defaul username is "pi" and the defaul password is "raspberry" for all Pis. Type `sudo raspi-config` and enable VNC connection and change the resolution to something besides the default, then finish and reboot. The menu may be slightly different than the one in the tutorial.
 
