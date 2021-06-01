@@ -28,11 +28,23 @@ You will only need to do this once. Make sure all important info is off of the S
 For a headless connection (using your laptop or computer to control the Pi), you can generally follow the instructions in this [tutorial](https://maker.pro/raspberry-pi/projects/how-to-connect-a-raspberry-pi-to-a-laptop-display), although some things might be a bit different. First, make a WiFi Config file. For WiFi networks that require a username as well, replace the network secion in the config file with the below code, substituting the username and password for the network:
 
 ```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=us
+
+###Use for network with username and password
 network={
-        ssid="<network>"
+        ssid="YOUR_WIFI_NAME"
         key_mgmt=WPA-EAP
-        identity="<username>"
-        password="<password>"
+	identity="USERNAME"
+	password="PASSWORD"
+}
+
+###use for network with just password
+network={
+	ssid="YOUR_WIFI_NAME"
+	psk="PASSWORD"
+	key_mgmt=WPA-PSK
 }
 ```
 
