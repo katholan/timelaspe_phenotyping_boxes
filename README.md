@@ -54,6 +54,8 @@ Download [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/) and s
 
 To use the camera module, follow this [tutorial](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/2). You'll need to install the camera in the Pi and enable the camera module.
 
+Pis do not have their own internal clock; accurate timestamps rely on WiFi connection (or you can reset the time every single time you turn the Pi back on). I had issues getting the WiFi to connect and running `rfkill unblock wifi` in the terminal fixed it for me.
+
 ## Raspberry Pi Camera Timelapse
 
 For this code, I am using the Python package [`PiCamera`](https://picamera.readthedocs.io/en/release-1.13/index.html).
