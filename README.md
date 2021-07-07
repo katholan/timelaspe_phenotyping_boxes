@@ -1,24 +1,24 @@
 # A repository for building a phenotyping cabinet set up with Raspberry Pi-controlled timelapse photos.
-This project uses a Raspberry Pi (controlled in headless mode) to take timelapse photos of leaves/plants in a plastic box. The price per unit is estimated to be $100-200 at the time of writing.
+This project uses a Raspberry Pi (controlled in headless mode) to take timelapse photos of leaves/plants in a plastic box. The price per unit is estimated to be $100-200 at the time of writing. It is based on the Navautron system from [this publication from Barbacci et al](https://doi.org/10.1111/tpj.14747).
 
 ## Supplies needed for this project
-1. Raspberry Pi 4
+1. Raspberry Pi 4, can be 1 or 2 Gb RAM
 2. Pi power supply
 3. Pi Case
 4. Heat sinks and case fan
 5. MicroSD card
 6. MicroSD USB adapter
-7. Raspberry Pi camera (V2)
+7. Raspberry Pi camera (V2), NoIR camera, or any Pi compatible camera
 8. Camera case
 9. Ethernet cable
 10. Wifi
 11. Laptop or computer
-12. Clear plastic bin or acrylic box
+12. Clear plastic bin or acrylic box. I used clear plastic storage bins.
 13. White LED lights (eg strip lights or aquarium lights)
  
 Raspberry Pis can be purchased from several places, eg Adafruit and Canakit. These brands also sell kits that often include at the very least a power supply. However, these kits can be more expensive than buying the parts individually. I ended up buying the standalone Pis and a cheaper case kit that included a power supply, heat sinks, and a fan. Some of the cases included in the kits also don't include a slot for the camera, meaning the case can't be closed completely when the camera is in use.
 
-Make sure the SD card is big enough to hold all of your pictures during the timecourse. This setup does not include cloud backup. Even when taking photos at the highest resolution, each Gb of memory can hold upwards of 150 photos. 
+Make sure the SD card is big enough to hold all of your pictures during the timecourse. Even when taking photos at the highest resolution, each Gb of memory can hold upwards of 150 photos. This setup does not include cloud backup. At the end of an experiment, I uploaded data from the Pi to Google Drive since the Pi file structure is unreadable by PC/Windows.
 
 ## Setting Up Your Raspberry Pi
 
