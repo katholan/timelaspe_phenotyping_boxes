@@ -18,7 +18,7 @@ This project uses a Raspberry Pi (controlled in headless mode) to take timelapse
  
 Raspberry Pis can be purchased from several places, eg Adafruit and Canakit. These brands also sell kits that often include at the very least a power supply. However, these kits can be more expensive than buying the parts individually. I ended up buying the standalone Pis and a cheaper case kit that included a power supply, heat sinks, and a fan. Some of the cases included in the kits also don't include a slot for the camera, meaning the case can't be closed completely when the camera is in use.
 
-Make sure the SD card is big enough to hold all of your pictures during the timecourse. Even when taking photos at the highest resolution, each Gb of memory can hold upwards of 150 photos. This setup does not include cloud backup. At the end of an experiment, I uploaded data from the Pi to Google Drive since the Pi file structure is unreadable by PC/Windows.
+Make sure the SD card is big enough to hold all of your pictures during the timecourse. For the NoIR camera with pictures at the highest resolution, 100 photos used ~3 Gb of memory. This setup does not include cloud backup. At the end of an experiment, I uploaded data from the Pi to Google Drive since the Pi file structure is unreadable by PC/Windows.
 
 ## Setting Up Your Raspberry Pi
 
