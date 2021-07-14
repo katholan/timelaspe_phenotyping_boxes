@@ -11,16 +11,15 @@ from picamera import PiCamera
 from time import sleep
 import os
 
-#set working directory where you want the photos to be saved.
-os.chdir('/home/pi/kat_holan/test')
+#set working directory
+os.chdir('/home/pi/kat_holan/test_ir2')
 
 #setting fixed attributes to the camera will allow for consistency between photos, i.e. no auto-adjustment
-camera = PiCamera(resolution=(1920, 1080), framerate=30) #the max for stills with the V2 camera is 3280 × 2464
-camera.iso = 100 #this value sets sensitivity to light. Lower values are less noisy but perform worse in low light conditions. Since this setup uses constant external light we can keep this value low
-
+camera = PiCamera(resolution=(3280, 2464), framerate=30) #the max for stills with the V2 camera is 3280 × 2464
+camera.iso = 100 #this value sets sensitivity to light. Lower values are less noisy but perform worse in low light conditions.
 camera.start_preview()
 sleep(5) #important to sleep for a few seconds to adjust to light levels
-for i in range(49): #will save a total of 49 photos
-	camera.capture('immune_suppression_{0}_hour.jpg'.format(i)) #will save the file with the HPI from 0 to 48.
+for i in range(0,96): #will save a total of 97 photos, starting at 0 HPI to 96 HPI. make sure everything is setup before running!
+	camera.capture("test_ir_{0}.jpg".format(i)) #names each picture HPI
 	sleep(3600) #wait 1 hour between photos
 camera.stop_preview()
