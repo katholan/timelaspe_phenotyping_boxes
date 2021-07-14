@@ -13,10 +13,10 @@ This project uses a Raspberry Pi (controlled in headless mode) to take timelapse
 9. Ethernet cable
 10. Wifi
 11. Laptop or computer
-12. Clear plastic bin or acrylic box. I used clear plastic storage bins.
+12. Clear plastic bin or acrylic box. I used clear plastic storage bins from Target.
 13. White LED lights (eg strip lights or aquarium lights)
  
-Raspberry Pis can be purchased from several places, eg Adafruit and Canakit. These brands also sell kits that often include at the very least a power supply. However, these kits can be more expensive than buying the parts individually. I ended up buying the standalone Pis and a cheaper case kit that included a power supply, heat sinks, and a fan. Some of the cases included in the kits also don't include a slot for the camera, meaning the case can't be closed completely when the camera is in use.
+Raspberry Pis can be purchased from several places, eg Adafruit and Canakit. These brands also sell kits that often include at the very least a power supply. However, these kits can be more expensive than buying the parts individually. I ended up buying the standalone Pis [from Adafruit}(https://www.adafruit.com/product/4295) and a cheaper case kit that included a power supply [here](https://www.amazon.com/gp/product/B07TTN1M7G/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1), heat sinks, and a fan. Some of the cases included in the kits also don't include a slot for the camera, meaning the case can't be closed completely when the camera is in use.
 
 Make sure the SD card is big enough to hold all of your pictures during the timecourse. For the NoIR camera with pictures at the highest resolution, 100 photos used ~3 Gb of memory. This setup does not include cloud backup. At the end of an experiment, I uploaded data from the Pi to Google Drive since the Pi file structure is unreadable by PC/Windows.
 
@@ -61,3 +61,6 @@ Pis do not have their own internal clock; accurate timestamps rely on WiFi conne
 For this code, I am using the Python package [`PiCamera`](https://picamera.readthedocs.io/en/release-1.13/index.html).
 
 The file `camera.py` contains the code I used for taking pictures with the Raspberry Pi. Do NOT name your files after already existing scripts (eg `picamera.py`).
+
+Here's an example of the time-lapse photos
+
