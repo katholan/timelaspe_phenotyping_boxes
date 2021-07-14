@@ -1,7 +1,7 @@
 # A repository for building a phenotyping cabinet set up with Raspberry Pi-controlled timelapse photos.
 This project uses a Raspberry Pi (controlled in headless mode) to take timelapse photos of leaves/plants in a plastic box. The price per unit is estimated to be $100-200 at the time of writing. It is based on the Navautron system from [this publication from Barbacci et al](https://doi.org/10.1111/tpj.14747).
 
-![A gif of the photos taken from a 96 hour immune assay timecourse. It shows the progression of plant immune response on several Nicotiana benthamiana leaves](test_ir2.gif}
+![A gif of the photos taken from a 96 hour immune assay timecourse. It shows the progression of plant immune response on several Nicotiana benthamiana leaves](test_ir2.gif)
 
 ## Supplies needed for this project
 1. Raspberry Pi 4, can be 1 or 2 Gb RAM
