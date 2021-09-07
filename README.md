@@ -10,7 +10,7 @@ This project uses a Raspberry Pi (controlled in headless mode) to take timelapse
 4. Heat sinks and case fan
 5. MicroSD card
 6. MicroSD USB adapter
-7. Raspberry Pi camera (V2), NoIR camera, or any Pi compatible camera
+7. Raspberry Pi camera (V2), NoIR camera, or any Pi compatible camera or lens mount and lens
 8. Camera case
 9. Ethernet cable
 10. Wifi
@@ -19,6 +19,8 @@ This project uses a Raspberry Pi (controlled in headless mode) to take timelapse
 13. White LED lights (eg strip lights or aquarium lights)
  
 Raspberry Pis can be purchased from several places, eg Adafruit and Canakit. These brands also sell kits that often include at the very least a power supply. However, these kits can be more expensive than buying the parts individually. I ended up buying the standalone Pis [from Adafruit](https://www.adafruit.com/product/4295) and a cheaper case kit that included a power supply [here](https://www.amazon.com/gp/product/B07TTN1M7G/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1), heat sinks, and a fan. Some of the cases included in the kits also don't include a slot for the camera, meaning the case can't be closed completely when the camera is in use.
+
+For the camera, I recommend getting a nicer lens mount like [this](https://www.amazon.com/dp/B013JTY8WY?psc=1&ref=ppx_yo2_dt_b_product_details) along with a [set of lenses](https://www.amazon.com/dp/B07NW8VR71?psc=1&ref=ppx_yo2_dt_b_product_details) or an [individual lens](https://www.amazon.com/dp/B08H512P4P?psc=1&ref=ppx_yo2_dt_b_product_details) if you know what angle you need for your project. For my boxes, I chose the M12 lens mount and the 70 degree low distortion lens, which seems to work well for my size boxes. These lenses do need to be hand focused. There are other lenses and modules that can be focuses programatically. 
 
 Make sure the SD card is big enough to hold all of your pictures during the timecourse. For the NoIR camera with pictures at the highest resolution, 100 photos used ~3 Gb of memory. This setup does not include cloud backup. At the end of an experiment, I uploaded data from the Pi to Google Drive since the Pi file structure is unreadable by PC/Windows.
 
