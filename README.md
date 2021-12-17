@@ -65,3 +65,32 @@ Pis do not have their own internal clock; accurate timestamps rely on WiFi conne
 For this code, I am using the Python package [`PiCamera`](https://picamera.readthedocs.io/en/release-1.13/index.html).
 
 The file `camera.py` contains the code I used for taking pictures with the Raspberry Pi. Do NOT name your files after already existing scripts (eg `picamera.py`).
+
+## Analyzing Images
+
+To make phenotyping easier, I decided to crop each individual leaf from each timepoint picture, and reorganize those cropped images of the same leaf in sequence in a single plot to easily view them side by side. Basically, instead of all leaves for one timepoint, I can see a specific leaf at every timepoint in the same image. This way, I can see that leaf's progression throughout the experiment at the same time without flipping between timepoint images.
+
+I have a Google Colab notebook that contains the code for this reorganizing. For access to this notebook, please email me.
+
+To reorganize, you will need the coordinates for each leaf. I get this manually using ImageJ:
+1. Start ImageJ or Fiji
+2. Open File -> Open one of your timecourse images. They should all be approximately in the same orientation/FOV, so it doesn't matter which one you pick.
+3. Using the "Rectangle" selection tool, draw a large box to encapsulate all leaves in the image. Since I number the leaves starting at "1" but Python numbering starts at "0", the ROI containing all of the leaves essentially becomes the "0th" leaf, which makes numbering the rest of the leaves easier/more intuitive.
+4. Press "Ctrl + B" to save the ROI selection.
+5. Repeat this process for every individual leaf on the image.
+6. Once the full image and all individual leaves have a box around them, click "Analyze" -> "Set Measurements" and make sure "Bounding Rectangle" is checked. You can check any of the other boxes if you want more information.
+7. Image -> Overlay -> ROI Manager
+8. Select all ROIs in the ROI Manager (Ctrl + A) -> Measure. This will pop up a table containing coordinate information.
+9. File -> Save on the pop up table.
+11. Open this saved file in Excel or a similar program. You will need to rename some columns and create new columns. There is an example of what this file should end up looking like in this repository.
+12. You will end up with 5 total columns, "name", "x1", "y1", "x3", "y3". I rename the ROIs to "full_image", "leaf1", "leaf2", etc.
+13. BX = x1
+14. BY = y1
+15. BX + Width = x3
+16. BY + Height = y3
+17. Save this file as a .csv file to your computer.
+18. You can double check your math for x3,y3 if you want by returning to ImageJ and pressing Ctrl+Y -> Check show coordinates. You can also press Edit -> Selection -> Properties -> Check "Show Coordinates".
+
+
+
+
