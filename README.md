@@ -77,7 +77,7 @@ To reorganize, you will need the coordinates for each leaf. I get this manually 
 2. Open File -> Open one of your timecourse images. They should all be approximately in the same orientation/FOV, so it doesn't matter which one you pick.
 3. Using the "Rectangle" selection tool, draw a large box to encapsulate all leaves in the image. Since I number the leaves starting at "1" but Python numbering starts at "0", the ROI containing all of the leaves essentially becomes the "0th" leaf, which makes numbering the rest of the leaves easier/more intuitive.
 4. Press "Ctrl + B" to save the ROI selection.
-5. Repeat this process for every individual leaf on the image.
+5. Repeat this process for every individual leaf on the image, making sure to go in the order you've numbered your leaves.
 6. Once the full image and all individual leaves have a box around them, click "Analyze" -> "Set Measurements" and make sure "Bounding Rectangle" is checked. You can check any of the other boxes if you want more information.
 7. Image -> Overlay -> ROI Manager
 8. Select all ROIs in the ROI Manager (Ctrl + A) -> Measure. This will pop up a table containing coordinate information.
