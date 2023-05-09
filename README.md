@@ -15,14 +15,22 @@ This project uses a Raspberry Pi (controlled in headless mode) to take timelapse
 9. Ethernet cable
 10. Wifi
 11. Laptop or computer
-12. Clear plastic bin or acrylic box. I used clear plastic storage bins from Target.
+12. Clear plastic bins or an acrylic box. I used clear plastic storage bins from Target, a deeper box for the bottom and a shallower box for the top.
 13. White LED lights (eg strip lights or aquarium lights)
  
 Raspberry Pis can be purchased from several places, eg Adafruit and Canakit. These brands also sell kits that often include at the very least a power supply. However, these kits can be more expensive than buying the parts individually. I ended up buying the standalone Pis [from Adafruit](https://www.adafruit.com/product/4295) and a cheaper case kit that included a power supply [here](https://www.amazon.com/gp/product/B07TTN1M7G/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1), heat sinks, and a fan. Some of the cases included in the kits also don't include a slot for the camera, meaning the case can't be closed completely when the camera is in use.
 
-For the camera, I recommend getting a nicer lens mount like [this](https://www.amazon.com/dp/B013JTY8WY?psc=1&ref=ppx_yo2_dt_b_product_details) along with a [set of lenses](https://www.amazon.com/dp/B07NW8VR71?psc=1&ref=ppx_yo2_dt_b_product_details) or an [individual lens](https://www.amazon.com/dp/B08H512P4P?psc=1&ref=ppx_yo2_dt_b_product_details) if you know what angle you need for your project. For my boxes, I chose the M12 lens mount and the 70 degree low distortion lens, which seems to work well for my size boxes. These lenses do need to be hand focused. There are other lenses and modules that can be focuses programatically. 
+For the camera, I recommend getting a [nicer lens mount like this](https://www.amazon.com/dp/B013JTY8WY?psc=1&ref=ppx_yo2_dt_b_product_details) along with a [set of lenses](https://www.amazon.com/dp/B07NW8VR71?psc=1&ref=ppx_yo2_dt_b_product_details) or an [individual lens](https://www.amazon.com/dp/B08H512P4P?psc=1&ref=ppx_yo2_dt_b_product_details) if you know what angle you need for your project. For my boxes, I chose the M12 lens mount and the 70 degree low distortion lens, which seems to work well for my size boxes. These lenses do need to be hand focused. There are other lenses and modules that can be focuses programatically. 
 
-Make sure the SD card is big enough to hold all of your pictures during the timecourse. For the NoIR camera with pictures at the highest resolution, 100 photos used ~3 Gb of memory. This setup does not include cloud backup. At the end of an experiment, I uploaded data from the Pi to Google Drive since the Pi file structure is unreadable by PC/Windows.
+Make sure the SD card is big enough to hold all of your pictures during the timecourse. For the NoIR camera with pictures at the highest resolution, 100 photos used ~3 Gb of memory. This setup does not include cloud backup. At the end of an experiment, I uploaded data from the Pi to Google Drive since the Pi file structure is unreadable by PC/Windows. For the visible light lens, photos are very small and several experiments can be run without removing or deleting files. Files should be backed up after each experiment.
+
+## Putting together the boxes
+
+If using clear plastic storage bins, you will need two per phenotyping box, a deeper one for the bottom and a shallower one for the top. The width and length dimensions of the two boxes should be the same size. In the center of the bottom of your shallower box, cut or drill a hole big enough to fit the lens of your camera. Depending on your lens mount, you may need to cut additional holes for twist ties to attach the lens mount or the camera cable.
+
+Stack your boxes on top of each other so that the bottom box is right side up and the top box is upside down. Drill small holes in the corners of both boxes where the lips touch so that twist ties can be threaded through to secure the boxes together during experiments.
+
+Near the bottom of your shallower box, drill a small hole for the LED strip excess/cable. Thread your LED lights through this hole and attach them to the bottom of your shallower box so that lights are evenly spaced. I used LED strips that were already adhesive. You can either use similar strips, add an adhesive, or drill small holes for twist ties to secure your lights. If drilling additional holes, it may be good to plug up the holes afterward with hot glue or similar to prevent moisture from escaping during experiments. 
 
 ## Setting Up Your Raspberry Pi
 
